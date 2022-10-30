@@ -1903,7 +1903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667127506697),
+    lastupdate: new Date(1667127879882),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2378,7 +2378,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="categories/" title="分类"
+                href="/categories/" title="分类"
                   
                   
                   
@@ -2395,7 +2395,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="tags/" title="标签"
+                href="/tags/" title="标签"
                   
                   
                   
@@ -2412,7 +2412,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="archives/" title="归档"
+                href="/archives/" title="归档"
                   
                   
                   
@@ -2429,7 +2429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="about/" title="关于"
+                href="/about/" title="关于"
                   
                   
                   
@@ -2482,7 +2482,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="categories/" title="分类"
+                href="/categories/" title="分类"
                   
                   
                   
@@ -2499,7 +2499,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="tags/" title="标签"
+                href="/tags/" title="标签"
                   
                   
                   
@@ -2516,7 +2516,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="archives/" title="归档"
+                href="/archives/" title="归档"
                   
                   
                   
@@ -2533,7 +2533,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="about/" title="关于"
+                href="/about/" title="关于"
                   
                   
                   
@@ -2587,28 +2587,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <i class='fa-solid fa-book fa-fw'></i><p>文章</p>
             </a>
           
-            <a href="categories/"
+            <a href="/categories/"
               
               
               active-action="action-categories">
               <i class='fa-solid fa-folder-open fa-fw'></i><p>分类</p>
             </a>
           
-            <a href="tags/"
+            <a href="/tags/"
               
               
               active-action="action-tags">
               <i class='fa-solid fa-tags fa-fw'></i><p>标签</p>
             </a>
           
-            <a href="archives/"
+            <a href="/archives/"
               
               
               active-action="action-archives">
               <i class='fa-solid fa-archive fa-fw'></i><p>归档</p>
             </a>
           
-            <a href="about/"
+            <a href="/about/"
               
               
               active-action="action-about">
@@ -3624,7 +3624,10 @@ throw 创建并抛出错误。
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.7.6" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
       
     
       
@@ -4247,6 +4250,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+
+  <script defer src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
 
 
 <!-- optional -->
