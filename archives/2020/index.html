@@ -1903,7 +1903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"../../js/app.js","parallax":"../../js/plugins/parallax.js","rightMenu":"../../js/plugins/rightMenu.js","rightMenus":"../../js/plugins/rightMenus.js","sites":"../../js/plugins/tags/sites.js","friends":"../../js/plugins/tags/friends.js","contributors":"../../js/plugins/tags/contributors.js","search":"../../js/search/hexo.js"},"css":{"style":"../../css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667125579107),
+    lastupdate: new Date(1667125948676),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -3073,7 +3073,7 @@ throw 创建并抛出错误。
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/description-博客/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/vue中eslint语法验证规则/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -3091,32 +3091,43 @@ throw 创建并抛出错误。
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/description-%E5%8D%9A%E5%AE%A2/"  itemprop="url">
-        description 博客
+      <a href="../../2020/07/28/vue%E4%B8%ADeslint%E8%AF%AD%E6%B3%95%E9%AA%8C%E8%AF%81%E8%A7%84%E5%88%99/"  itemprop="url">
+        vue中eslint语法验证规则
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        在vscode中编写vue程序，对于语法什么的还是需要插件来帮助初学者养成良好的变成规范。eslint加上prettier确实是很棒的插件。但是在编码的过程中，总会有一些烦人的验证，但在开发中其实并没有什么太大的影响，所以我们可以根据自己的需要对规则进行一下设置或者取消。
+我们只需要修改打开根目录下的eslintrc.js
+在rules下添加相应的规则就好了
+‘semi’: 0，0表示关闭改...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:12+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:40:46+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/JS/">JS</a><span class="sep"></span><a class="category-link" href="../../categories/vue/">vue</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/JS/" itemprop="url"><span itemprop="name">JS</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="../../categories/vue/" itemprop="url"><span itemprop="name">vue</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/description-%E5%8D%9A%E5%AE%A2/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/vue%E4%B8%ADeslint%E8%AF%AD%E6%B3%95%E9%AA%8C%E8%AF%81%E8%A7%84%E5%88%99/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3132,7 +3143,7 @@ throw 创建并抛出错误。
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/local-post-office-联系我们/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/vuex/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -3150,32 +3161,43 @@ throw 创建并抛出错误。
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/local-post-office-%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/"  itemprop="url">
-        local_post_office 联系我们
+      <a href="../../2020/07/28/vuex/"  itemprop="url">
+        Vuex
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        main.jsimport store from &#39;./store.js&#39;//!!!!!!!
+new Vue(&#123;
+    store,//!!!!!!
+    render: h =&gt; h(App)
+&#125;).$mount(&#39;#app&#39;)
+
+store.jsimport Vue from &#39;vue&#39;
+import Vuex...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:12+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:31:46+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/vue/">vue</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/vue/" itemprop="url"><span itemprop="name">vue</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/local-post-office-%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/vuex/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3191,7 +3213,7 @@ throw 创建并抛出错误。
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/facebook-2/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/常见网络状态码/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -3209,32 +3231,50 @@ throw 创建并抛出错误。
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/facebook-2/"  itemprop="url">
-        Facebook
+      <a href="../../2020/07/28/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%A0%81/"  itemprop="url">
+        常见网络状态码
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        00——客户必须继续发出请求
+101——客户要求服务器根据请求转换HTTP协议版本
+200——请求成功
+201——提示知道新文件的URL
+202——接受和处理、但处理未完成
+203——返回信息不确定或不完整
+204——请求收到，但返回信息为空
+205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件
+206——服务器已经完成了部分用户的GET请求
+300——请求的资源可在多处得到
+3...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:22:01+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/JS/">JS</a><span class="sep"></span><a class="category-link" href="../../categories/%E6%A6%82%E5%BF%B5/">概念</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/%E6%A6%82%E5%BF%B5/" itemprop="url"><span itemprop="name">概念</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="../../categories/JS/" itemprop="url"><span itemprop="name">JS</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/facebook-2/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%A0%81/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3250,7 +3290,7 @@ throw 创建并抛出错误。
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/facebook/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/vue-router路由守卫/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -3268,32 +3308,45 @@ throw 创建并抛出错误。
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/facebook/"  itemprop="url">
-        Facebook
+      <a href="../../2020/07/28/vue-router%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/"  itemprop="url">
+        Vue-Router路由守卫
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        首先引入vue-router文件：import Router from &#39;vue-router&#39;
+
+然后创建一个路由对象：const router = new Router(&#123;
+routes: [
+&#123; path: &#39;/login&#39;, component: Login &#125;,
+]
+&#125;)
+
+为路由对象添加路由导航守卫：
+路由导...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:17:11+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/vue/">vue</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/vue/" itemprop="url"><span itemprop="name">vue</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/facebook/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/vue-router%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3314,7 +3367,7 @@ throw 创建并抛出错误。
       <div class="prev-next">
         
         <p class="current">
-          1 / 3
+          1 / 2
         </p>
         
           <a class="next" rel="next" href="page/2/">
@@ -3427,7 +3480,7 @@ throw 创建并抛出错误。
           <li><a class="flat-box"
             title="../../categories/uncategorized/" href="../../categories/uncategorized/"
             active-action="action-categoriesuncategorized"
-            ><div class='name'>uncategorized</div><div class='badge'>(14)</div></a></li>
+            ><div class='name'>uncategorized</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="../../categories/vue/" href="../../categories/vue/"

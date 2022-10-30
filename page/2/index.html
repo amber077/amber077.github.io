@@ -1903,7 +1903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"../../js/app.js","parallax":"../../js/plugins/parallax.js","rightMenu":"../../js/plugins/rightMenu.js","rightMenus":"../../js/plugins/rightMenus.js","sites":"../../js/plugins/tags/sites.js","friends":"../../js/plugins/tags/friends.js","contributors":"../../js/plugins/tags/contributors.js","search":"../../js/search/hexo.js"},"css":{"style":"../../css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667125579107),
+    lastupdate: new Date(1667125948676),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2639,7 +2639,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/description-博客/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/vuex/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2657,32 +2657,43 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/description-%E5%8D%9A%E5%AE%A2/"  itemprop="url">
-        description 博客
+      <a href="../../2020/07/28/vuex/"  itemprop="url">
+        Vuex
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        main.jsimport store from &#39;./store.js&#39;//!!!!!!!
+new Vue(&#123;
+    store,//!!!!!!
+    render: h =&gt; h(App)
+&#125;).$mount(&#39;#app&#39;)
+
+store.jsimport Vue from &#39;vue&#39;
+import Vuex...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:12+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:31:46+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/vue/">vue</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/vue/" itemprop="url"><span itemprop="name">vue</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/description-%E5%8D%9A%E5%AE%A2/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/vuex/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2698,7 +2709,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/local-post-office-联系我们/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/常见网络状态码/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2716,32 +2727,50 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/local-post-office-%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/"  itemprop="url">
-        local_post_office 联系我们
+      <a href="../../2020/07/28/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%A0%81/"  itemprop="url">
+        常见网络状态码
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        00——客户必须继续发出请求
+101——客户要求服务器根据请求转换HTTP协议版本
+200——请求成功
+201——提示知道新文件的URL
+202——接受和处理、但处理未完成
+203——返回信息不确定或不完整
+204——请求收到，但返回信息为空
+205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件
+206——服务器已经完成了部分用户的GET请求
+300——请求的资源可在多处得到
+3...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:12+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:22:01+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/JS/">JS</a><span class="sep"></span><a class="category-link" href="../../categories/%E6%A6%82%E5%BF%B5/">概念</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/%E6%A6%82%E5%BF%B5/" itemprop="url"><span itemprop="name">概念</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="../../categories/JS/" itemprop="url"><span itemprop="name">JS</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/local-post-office-%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/%E5%B8%B8%E8%A7%81%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%A0%81/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2757,7 +2786,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/facebook-2/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/vue-router路由守卫/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2775,32 +2804,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/facebook-2/"  itemprop="url">
-        Facebook
+      <a href="../../2020/07/28/vue-router%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/"  itemprop="url">
+        Vue-Router路由守卫
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        首先引入vue-router文件：import Router from &#39;vue-router&#39;
+
+然后创建一个路由对象：const router = new Router(&#123;
+routes: [
+&#123; path: &#39;/login&#39;, component: Login &#125;,
+]
+&#125;)
+
+为路由对象添加路由导航守卫：
+路由导...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T16:17:11+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/vue/">vue</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/vue/" itemprop="url"><span itemprop="name">vue</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/facebook-2/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/vue-router%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2816,7 +2858,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/facebook/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/js内置对象和方法/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2834,32 +2876,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/facebook/"  itemprop="url">
-        Facebook
+      <a href="../../2020/07/28/js%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%96%B9%E6%B3%95/"  itemprop="url">
+        JS内置对象和方法
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        字符串String实例*1.str.indexOf(&#39;xxx&#39;,startIndex)//从startIndex索引位置，开始查找xxx的索引，如果找不到返回-1 (从头到尾查找)
+*2.str.lastIndexOf(&#39;xxx&#39;,startIndex)//从startIndex索引位置，开始查找xxx的索引，如果找不到返回-1 (从尾到头查找)
+*3.str...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T15:41:05+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/JS/">JS</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/JS/" itemprop="url"><span itemprop="name">JS</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/facebook/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/js%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%96%B9%E6%B3%95/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2875,7 +2923,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/help-关于/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/bfc块级格式化上下文/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2893,32 +2941,37 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/help-%E5%85%B3%E4%BA%8E/"  itemprop="url">
-        help 关于
+      <a href="../../2020/07/28/bfc%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/"  itemprop="url">
+        BFC块级格式化上下文
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        什么是BFC​ BFC全称叫做（Block Formatting Context）中文叫块级格式化上下文，是一个网页的概念。网页是一个一个盒子组成的，那么这个BFC到底有什么用途呢？首先我们先来看一下官方的说明：
+一个块格式化上下文（block formatting context） 是Web页面的可视化CSS渲染出的一部分。它是块级盒布局出现的区域，也是浮动层元素进行交互的区域。一个块格式...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T15:23:02+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/%E6%A6%82%E5%BF%B5/">概念</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/%E6%A6%82%E5%BF%B5/" itemprop="url"><span itemprop="name">概念</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/help-%E5%85%B3%E4%BA%8E/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/bfc%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2934,7 +2987,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/instagram/">
+  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/07/28/概念总结/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Amber - 一个小白的笔记">
   </span>
@@ -2952,268 +3005,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/instagram/"  itemprop="url">
-        Instagram
+      <a href="../../2020/07/28/%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/"  itemprop="url">
+        概念总结
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
+    
+      
+        HTML结构语义化
+去掉或样式丢失的时候能让页面呈现清晰的结构
+html本身是没有表现的，我们看到例如&lt;h1&gt;是粗体，字体大小2em，加粗；&lt;strong&gt;是加粗的，不要认为这是html的表现，这些其实html默认的css样式在起作用，所以去掉或样式丢失的时候能让页面呈现清晰的结构不是语义化的HTML结构的优点，但是浏览器都有有默认样式，默认样式的目的也是为了更好的表...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2020-07-28T15:01:13+08:00">2020-07-28</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
+          <a class="category-link" href="../../categories/%E6%A6%82%E5%BF%B5/">概念</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
+              <a href="../../categories/%E6%A6%82%E5%BF%B5/" itemprop="url"><span itemprop="name">概念</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='../../2020/08/03/instagram/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/instagram-2/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-    <meta itemprop="description" content="一个小白的笔记">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/instagram-2/"  itemprop="url">
-        Instagram
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='../../2020/08/03/instagram-2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/twitter-2/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-    <meta itemprop="description" content="一个小白的笔记">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/twitter-2/"  itemprop="url">
-        Twitter
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='../../2020/08/03/twitter-2/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/twitter/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-    <meta itemprop="description" content="一个小白的笔记">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/twitter/"  itemprop="url">
-        Twitter
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='../../2020/08/03/twitter/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.aabbba.com/2020/08/03/yelp/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Amber - 一个小白的笔记">
-    <meta itemprop="description" content="一个小白的笔记">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="../../2020/08/03/yelp/"  itemprop="url">
-        Yelp
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2020-08-03T17:05:10+08:00">2020-08-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="../../categories/uncategorized/">uncategorized</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="../../categories/uncategorized/" itemprop="url"><span itemprop="name">uncategorized</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='../../2020/08/03/yelp/' itemprop="url">
+          <a class='readmore' href='../../2020/07/28/%E6%A6%82%E5%BF%B5%E6%80%BB%E7%BB%93/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -3240,14 +3063,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           </a>
         
         <p class="current">
-          2 / 3
+          2 / 2
         </p>
-        
-          <a class="next" rel="next" href="../3/">
-            <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
         
       </div>
     
@@ -3352,7 +3169,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="../../categories/uncategorized/" href="../../categories/uncategorized/"
             active-action="action-categoriesuncategorized"
-            ><div class='name'>uncategorized</div><div class='badge'>(14)</div></a></li>
+            ><div class='name'>uncategorized</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="../../categories/vue/" href="../../categories/vue/"
