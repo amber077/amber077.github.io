@@ -43,7 +43,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-25T09:49:53.000Z">
-<meta property="article:modified_time" content="2022-10-30T10:17:33.104Z">
+<meta property="article:modified_time" content="2023-02-09T05:17:11.968Z">
 <meta property="article:author" content="Amber">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1905,7 +1905,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"../../../../js/app.js","parallax":"../../../../js/plugins/parallax.js","rightMenu":"../../../../js/plugins/rightMenu.js","rightMenus":"../../../../js/plugins/rightMenus.js","sites":"../../../../js/plugins/tags/sites.js","friends":"../../../../js/plugins/tags/friends.js","contributors":"../../../../js/plugins/tags/contributors.js","search":"../../../../js/search/hexo.js"},"css":{"style":"../../../../css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667208881014),
+    lastupdate: new Date(1675919902069),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2948,163 +2948,259 @@ export default class &#123;
   &#125;);
 &#125;;
 </code></pre>
-<h2 id="数据文档"><a href="#数据文档" class="headerlink" title="数据文档"></a>数据文档</h2><h4 id="公用参数"><a href="#公用参数" class="headerlink" title="公用参数"></a>公用参数</h4><p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>type</p>
-<p>绘制的类型，具体见下方说明可选值<br>(img,text,longText,textBg,delLine,star)</p>
-<p>String</p>
-<p>是</p>
-<p>top</p>
-<p>距离海报顶部的距离</p>
-<p>Number</p>
-<p>是</p>
-<p>left</p>
-<p>距离海报左侧的距离</p>
-<p>Number</p>
-<p>是</p>
-<p>content</p>
-<p>img：图片地址，star：点亮星星的数量<br>其它类型为文字内容</p>
-<p>StringNumber</p>
-<p>是</p>
-<p>key</p>
-<p>自定义参数，用来区分当前内容</p>
-<p>any</p>
-<p>否</p>
+<h2 id="数据文档"><a href="#数据文档" class="headerlink" title="数据文档"></a>数据文档</h2><h4 id="公用参数"><a href="#公用参数" class="headerlink" title="公用参数"></a>公用参数</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>绘制的类型，具体见下方说明可选值<br />(img,text,longText,textBg,delLine,star)</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>top</td>
+<td>距离海报顶部的距离</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>left</td>
+<td>距离海报左侧的距离</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>content</td>
+<td>img：图片地址<br />star：点亮星星的数量  其它类型为文字内容</td>
+<td>String|Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>key</td>
+<td>自定义参数，用来区分当前内容</td>
+<td>any</td>
+<td>否</td>
+</tr>
+</tbody></table>
 <blockquote>
 <p>每个type类型下有独有的参数</p>
 </blockquote>
 <h5 id="img"><a href="#img" class="headerlink" title="img"></a>img</h5><blockquote>
 <p>图片</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>width</p>
-<p>图片宽度</p>
-<p>Number</p>
-<p>是</p>
-<p>height</p>
-<p>图片高度</p>
-<p>Number</p>
-<p>是</p>
-<p>radius</p>
-<p>圆角</p>
-<p>Number</p>
-<p>否</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>width</td>
+<td>图片宽度</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>height</td>
+<td>图片高度</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>圆角</td>
+<td>Number</td>
+<td>否</td>
+</tr>
+</tbody></table>
 <h5 id="text"><a href="#text" class="headerlink" title="text"></a>text</h5><blockquote>
 <p>文本</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>align</p>
-<p>文字对齐方式，目前只有‘center’<br>若传该参数，left不生效</p>
-<p>String</p>
-<p>否</p>
-<p>size</p>
-<p>字体大小</p>
-<p>Number</p>
-<p>是</p>
-<p>color</p>
-<p>字体颜色</p>
-<p>String</p>
-<p>是</p>
-<p>font</p>
-<p>字体格式，优先级小于size，color</p>
-<p>String</p>
-<p>否</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>文字对齐方式，目前只有‘center’ <br />若传该参数，left不生效</td>
+<td>String</td>
+<td>否</td>
+</tr>
+<tr>
+<td>size</td>
+<td>字体大小(px)</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>字体颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>font</td>
+<td>字体格式，优先级小于size，color</td>
+<td>String</td>
+<td>否</td>
+</tr>
+</tbody></table>
 <h5 id="longText"><a href="#longText" class="headerlink" title="longText"></a>longText</h5><blockquote>
 <p>多行文本</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>size</p>
-<p>文字大小</p>
-<p>Number</p>
-<p>是</p>
-<p>lineHeight</p>
-<p>行高</p>
-<p>Number</p>
-<p>是</p>
-<p>maxWidth</p>
-<p>最大宽度，超出换行</p>
-<p>Number</p>
-<p>是</p>
-<p>color</p>
-<p>文本颜色</p>
-<p>String</p>
-<p>是</p>
-<p>line</p>
-<p>最大行数，超出…</p>
-<p>Number</p>
-<p>是</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>size</td>
+<td>字体大小(px)</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>lineHeight</td>
+<td>行高</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>最大宽度，超出换行</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>文本颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>line</td>
+<td>最大行数，超出…</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+</tbody></table>
 <h5 id="textBg"><a href="#textBg" class="headerlink" title="textBg"></a>textBg</h5><blockquote>
 <p>文字背景，content为需要加背景的文本</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>size</p>
-<p>文字大小</p>
-<p>String</p>
-<p>是</p>
-<p>color</p>
-<p>背景颜色</p>
-<p>String</p>
-<p>是</p>
-<p>height</p>
-<p>背景高度</p>
-<p>Number</p>
-<p>是</p>
-<p>padding</p>
-<p>文字距离背景左右之间距离之和</p>
-<p>Number</p>
-<p>是</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>size</td>
+<td>文字大小</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>背景颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>height</td>
+<td>背景高度</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>padding</td>
+<td>文字距离背景左右之间距离之和</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+</tbody></table>
 <h5 id="delLine"><a href="#delLine" class="headerlink" title="delLine"></a>delLine</h5><blockquote>
 <p>文本上方横线，需要先绘制文字，然后再绘制横线，否则文字会盖住横线，content为需要横线的文字</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>height</p>
-<p>横向粗细</p>
-<p>Number</p>
-<p>是</p>
-<p>size</p>
-<p>需要横线的文字大小</p>
-<p>Number</p>
-<p>是</p>
-<p>color</p>
-<p>横线颜色</p>
-<p>String</p>
-<p>是</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>height</td>
+<td>横线粗细</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>size</td>
+<td>需要横线的文字大小</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>横线颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+</tbody></table>
 <h5 id="star"><a href="#star" class="headerlink" title="star"></a>star</h5><blockquote>
 <p>星标，content为点亮的数量，该功能尚未完善</p>
 </blockquote>
-<p>参数</p>
-<p>说明</p>
-<p>类型</p>
-<p>是否必传</p>
-<p>currentColor</p>
-<p>点亮星星的颜色</p>
-<p>String</p>
-<p>是</p>
-<p>color</p>
-<p>未点亮的颜色</p>
-<p>String</p>
-<p>是</p>
-<p>num</p>
-<p>总数</p>
-<p>Number</p>
-<p>是</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>是否必传</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>currentColor</td>
+<td>点亮星星的颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>color</td>
+<td>未点亮的颜色</td>
+<td>String</td>
+<td>是</td>
+</tr>
+<tr>
+<td>num</td>
+<td>总数</td>
+<td>Number</td>
+<td>是</td>
+</tr>
+</tbody></table>
 
   </div>
   
@@ -3129,10 +3225,10 @@ export default class &#123;
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-10-30T18:17:33+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-02-09T13:17:11+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年10月30日</p>
+    <p>更新于：2023年2月9日</p>
   </a>
 </div>
 
@@ -4281,7 +4377,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/","sameAs":["https://github.com/volantis-x"],"description":"一个小白的笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.aabbba.com/","name":"Amber - 一个小白的笔记"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.aabbba.com/categories/JS/","name":"JS"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.aabbba.com/categories/vue/","name":"vue"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.aabbba.com/2022/05/25/uniapp中常用canvas工具/","name":"uniapp中常用canvas工具"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","keywords":null,"description":"一个小白的笔记","author":{"@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/","description":"一个小白的笔记"},"publisher":{"@type":"Organization","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.aabbba.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"uniapp中常用canvas工具","description":"一个小白的笔记","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.aabbba.com/2022/05/25/uniapp%E4%B8%AD%E5%B8%B8%E7%94%A8canvas%E5%B7%A5%E5%85%B7/"},"author":{"@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/"},"publisher":{"@type":"Organization","name":"Amber - 一个小白的笔记","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.aabbba.com/2022/05/25/uniapp%E4%B8%AD%E5%B8%B8%E7%94%A8canvas%E5%B7%A5%E5%85%B7/","wordCount":0,"datePublished":"2022-05-25T09:49:53.000Z","dateModified":"2022-10-30T10:17:33.104Z","articleSection":"JS","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/","sameAs":["https://github.com/volantis-x"],"description":"一个小白的笔记"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.aabbba.com/","name":"Amber - 一个小白的笔记"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.aabbba.com/categories/JS/","name":"JS"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.aabbba.com/categories/vue/","name":"vue"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.aabbba.com/2022/05/25/uniapp中常用canvas工具/","name":"uniapp中常用canvas工具"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","keywords":null,"description":"一个小白的笔记","author":{"@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/","description":"一个小白的笔记"},"publisher":{"@type":"Organization","name":"Amber - 一个小白的笔记","url":"http://blog.aabbba.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.aabbba.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"uniapp中常用canvas工具","description":"一个小白的笔记","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.aabbba.com/2022/05/25/uniapp%E4%B8%AD%E5%B8%B8%E7%94%A8canvas%E5%B7%A5%E5%85%B7/"},"author":{"@type":"Person","name":"Amber","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.aabbba.com/"},"publisher":{"@type":"Organization","name":"Amber - 一个小白的笔记","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.aabbba.com/2022/05/25/uniapp%E4%B8%AD%E5%B8%B8%E7%94%A8canvas%E5%B7%A5%E5%85%B7/","wordCount":0,"datePublished":"2022-05-25T09:49:53.000Z","dateModified":"2023-02-09T05:17:11.968Z","articleSection":"JS","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
